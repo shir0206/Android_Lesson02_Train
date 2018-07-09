@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:id="@+id/backgroundImage"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_above="@+id/bottomArea"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/trainName"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:text="יציאה בשעה 17:12"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/currentlyLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/trainName"
+            android:layout_marginBottom="-10dp"
+            android:background="#FFFFFF"
+            android:paddingRight="10dp"
+            android:text="תל אביב השלום >> נהריה"
+            android:textColor="#D2486F"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bookButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/currentlyLabel"
+            android:layout_marginStart="10dp"
+            android:background="#D2486F"
+            android:padding="10dp"
+            android:text="רכישת \nכרטיסים"
+            android:textColor="#FFFFFF" />
+
+
+        <TextView
+            android:id="@+id/detailHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#000000"
+            android:padding="2dp"
+            android:text="תכנון נסיעה"
+
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomArea"
+        android:layout_width="355dp"
+        android:layout_height="190dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+
+        android:layout_marginStart="5dp"
+        android:background="#f1c7c5"
+        android:orientation="vertical"
+        android:weightSum="32">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:weightSum="32">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/downText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="7"
+                android:gravity="center_vertical"
+                android:text="מאוחר יותר \n            17:28"
+                android:textColor="#000000" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/downArrow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrowdown" />
+
+
+
+
+
+
+
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+
+            <TextView
+                android:id="@+id/upText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="7"
+                android:gravity="center_vertical"
+                android:text="מוקדם יותר \n            16:58"
+                android:textColor="#000000" />
+
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+            <ImageView
+                android:id="@+id/upArrow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrowup" />
+
+
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:weightSum="32">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+
+            <TextView
+                android:id="@+id/gpsText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="7"
+                android:gravity="center_vertical"
+                android:text="התחנה הקרובה למיקומך"
+                android:textColor="#000000" />
+
+
+
+
+
+
+
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/gpsImage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gps" />
+
+
+
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+
+
+            <TextView
+                android:id="@+id/newsText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="7"
+                android:gravity="center_vertical"
+                android:text="חדשות ועדכונים"
+                android:textColor="#000000" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/newsImage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:scaleType="fitCenter"
+                android:src="@drawable/news" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="4"
+
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
